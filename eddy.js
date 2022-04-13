@@ -1,29 +1,26 @@
-const title = document.querySelector(".title ");
-        
+// const h1 = document.querySelector("h1");
 
-function hi(){
-    title.style.color = "magenta";
-}
-function entermouse() {
-    title.innerText = "바보!";
-}
-function leavemouse() {
-    title.innerText = "박태건";
-}
-function changeWebColor () {
-    document.body.style.backgroundColor = "maroon";
-}
-function copysomething() {
-    alert("You copied!");
-}
-function pastesomething(){
-    alert("you pasted!");
-}
-
-    title.addEventListener("click" , hi );
-    title.addEventListener("mouseenter" , entermouse);
-    title.addEventListener("mouseleave" , leavemouse);
+// function somethingclick(){
+//     const easy = "active"
+//     if(h1.className === easy) {
+//         h1.className = "" ;
+//     } else {
+//         h1.className = easy
+//     }
     
-    window.addEventListener("resize" , changeWebColor);
-    window.addEventListener("copy" , copysomething);
-    window.addEventListener("paste" , pastesomething);
+// }
+
+//     h1.addEventListener("click" , somethingclick );
+
+
+const fafa = document.querySelector("h1");
+function clickChange() {
+    if( fafa.className === "active") {
+        fafa.className = "";
+    } else {
+        fafa.className = "active";
+    }
+
+}
+
+fafa.addEventListener("click" , clickChange);
