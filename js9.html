@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const age = parseInt(prompt("How old are you?"));
+        if(isNaN(age)) {
+            alert("please write a positive number.");
+        }else if (age <= 18){
+            alert("Go to home");
+        }else if (age >= 18 && age < 55) {
+            alert( "Enjoy your self");
+        }else if (age >= 55 <= age && age < 100) {
+            alert("Don't drink too much");
+        }
+        else {
+            alert("Thank you for write your age.\nyou can do whatever you want!");
+        }
+    
+
+
+
+    </script>
+</body>
+</html>
